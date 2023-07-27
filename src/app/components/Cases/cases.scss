@@ -4,6 +4,7 @@
   margin: 5rem auto 3rem auto;
   padding: 0.5rem 0.6rem;
   color: #fff;
+
   .cases-box {
     background: #014694;
     position: relative;
@@ -46,3 +47,42 @@
     }
   }
 }
+
+@media (max-width: 652px){
+  .css-phooid-MuiGrid2-root{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    --Grid-columns: none;
+    .cases-box{
+      width: 500px;
+      
+    }
+  }
+}
+
+@media (max-width: 600px){ 
+  .css-phooid-MuiGrid2-root{
+    .cases-box{
+      width: 400px;
+      max-width: 100%;
+    }
+
+  } 
+    
+  
+}
+
+@media (max-width: 471){ 
+  .css-phooid-MuiGrid2-root{
+    .cases-box{
+      width: 300px;
+      max-width: 100%;
+    }
+
+  } 
+    
+  
+}
+

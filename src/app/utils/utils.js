@@ -16,3 +16,22 @@ export function divPosition(num) {
       return;
   }
 }
+
+export function divLaptopPosition(num){
+  switch (num) {
+    case 1:
+      return "1 / 1 / 2 / 2";
+    case 2:
+      return "1 / 2 / 2 / 3";
+    case 3:
+      return "2 / 1 / 3 / 2";
+    case 4:
+      return "2 / 2 / 3 / 3";
+    case 5:
+      return "3 / 1 / 4 / 2";
+    case 6:
+      return "3 / 2 / 4 / 3";
+    default:
+      return;
+  }
+}

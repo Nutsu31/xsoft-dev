@@ -3,6 +3,7 @@
   height: 600px;
   overflow: hidden;
   position: relative;
+  max-width: 95%;
 }
 
 .img {
@@ -59,4 +60,18 @@
   height: 60px;
   border: none;
   background: #3056ff;
+}
+
+@media (max-width: 1020px) {
+  .img {
+    width: 100%; /* Make the image width 100% of its container */
+    height: 100%; /* Allow the height to adjust based on the image's aspect ratio */
+    object-fit: contain;
+  }
+  
+  .imgShadow {
+    width: 600px;
+    height: 300px;
+    max-width: 100%; 
+  }
 }

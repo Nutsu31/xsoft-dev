@@ -21,10 +21,13 @@ export default function Home() {
           alignItems: "center",
           justifyContent: "center",
           position: "relative",
+          width: "1060px",
+          maxWidth: "90%",
+          margin: "0 auto"
         }}
       >
         <WallpaperSection />
-        <RoundCircle />
+        <RoundCircle  />
         <div>
           <SectionHeader text={header1} />
           <ProblemSolvingSection />
