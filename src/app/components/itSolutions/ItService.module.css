@@ -1,21 +1,23 @@
 .box {
-  width: 400px;
-  height: 284px;
+  width: 500px;
+  height: 254px;
   border-radius: 16px;
   cursor: unset;
   display: inline-flex;
   flex: 1;
   flex-direction: column;
   justify-content: center;
+  gap: 16px;
   margin-bottom: 24px;
   padding: 36px;
   text-decoration: none;
   background: #242424;
   position: relative;
   overflow: hidden;
+  z-index: 1;
 }
 .box:hover {
-  background: linear-gradient(180deg, #242424 35%, #26263d 55%, #2c2eac);
+  background: linear-gradient(180deg, #242424 35%, #033064);
 }
 
 .header {
@@ -26,6 +28,9 @@
   color: gray;
 }
 
-.photo:hover {
-  background: #0b10ff;
+.photo {
+  position: absolute;
+  right: -3px;
+  bottom: -50px;
+  z-index: -1;
 }
