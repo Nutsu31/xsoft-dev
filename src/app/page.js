@@ -1,31 +1,40 @@
 import ProblemSolvingSection from "./components/probleSolvingSection/ProblemSolvingSection";
 import ItServiceSection from "./components/itSolutions/ItServiceSection";
+import Layout from "./components/Layout/Layout";
+import "./page.css";
+import Cases from "./components/Cases/Cases";
 import RoundCircle from "./components/roundCircle/RoundCircle";
+import SectionHeader from "./components/SectionHeader/SectionHeader";
+import WallpaperSection from "./components/wallpaper/WallpaperSection";
+
+const header1 = "We are focused on solving your problems";
+const header2 = "IT solutions for business";
+
 export default function Home() {
   return (
-    <div
-      style={{
-        display: "flex",
-        gap: 50,
-        flexDirection: "column",
-        alignItems: "center",
-        position: "relative",
-      }}
-    >
-      <RoundCircle />
-      <h1
-        style={{ color: "white", fontSize: 56, textAlign: "left", width: 1000 }}
+    <Layout>
+      <div
+        style={{
+          display: "flex",
+          gap: 100,
+          flexDirection: "column",
+          alignItems: "center",
+          justifyContent: "center",
+          position: "relative",
+        }}
       >
-        We are focused on solving your problems
-      </h1>
-      <ProblemSolvingSection />
-      <h1
-        style={{ color: "white", fontSize: 56, textAlign: "left", width: 1000 }}
-      >
-        IT solutions for business
-      </h1>
-
-      <ItServiceSection />
-    </div>
+        <WallpaperSection />
+        <RoundCircle />
+        <div>
+          <SectionHeader text={header1} />
+          <ProblemSolvingSection />
+        </div>
+        <div>
+          <SectionHeader text={header2} />
+          <ItServiceSection />
+        </div>
+      </div>
+      <Cases />
+    </Layout>
   );
 }
