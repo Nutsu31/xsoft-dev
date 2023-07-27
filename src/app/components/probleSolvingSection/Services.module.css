@@ -1,0 +1,35 @@
+.box {
+  width: 300px;
+  height: 164px;
+  border-radius: 16px;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  padding: 36px;
+  text-decoration: none;
+  background: #242424;
+  position: relative;
+  overflow: hidden;
+}
+.box:hover {
+  background: linear-gradient(140deg, #242424 35%, #26263d 55%, #2c2eac);
+}
+
+.header {
+  color: white;
+  font-size: 24px;
+}
+.info {
+  color: gray;
+}
+.more {
+  color: #0b10ff;
+  font-size: 20px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.photo:hover {
+  background: #0b10ff;
+}
