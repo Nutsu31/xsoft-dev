@@ -13,7 +13,7 @@ export default function Home() {
           display: "flex",
           gap: 50,
           flexDirection: "column",
-          alignItems: "center",
+          position: "relative",
         }}
       >
         <ProblemSolvingSection />
