@@ -1,10 +1,9 @@
 .grid {
-  height: 500px;
   display: grid;
   align-items: center;
   justify-content: center;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  grid-column-gap: 16px;
-  grid-row-gap: 0px;
+  grid-column-gap: 36px;
+  grid-row-gap: 24px;
 }

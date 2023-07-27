@@ -14,5 +14,9 @@
     "next": "13.4.12",
     "react": "18.2.0",
     "react-dom": "18.2.0"
+  },
+  "devDependencies": {
+    "@svgr/webpack": "^8.0.1",
+    "babel-plugin-inline-react-svg": "^2.0.2"
   }
 }
