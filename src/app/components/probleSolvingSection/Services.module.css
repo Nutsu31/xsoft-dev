@@ -12,7 +12,10 @@
   background: #242424;
   position: relative;
   overflow: hidden;
+  z-index: 2;
 }
+
+
 .box:hover {
   background: linear-gradient(140deg, #242424 35%, #033064);
 }
@@ -30,3 +33,4 @@
   font-weight: 700;
   cursor: pointer;
 }
+

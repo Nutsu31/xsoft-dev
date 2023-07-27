@@ -15,6 +15,7 @@
   position: relative;
   overflow: hidden;
   z-index: 1;
+  max-width: 95%;
 }
 .box:hover {
   background: linear-gradient(180deg, #242424 35%, #033064);
@@ -33,4 +34,12 @@
   right: -3px;
   bottom: -50px;
   z-index: -1;
+}
+
+@media (max-width: 528px){
+  .box{
+    height: auto;
+    width: 95%;
+  }
+  
 }
