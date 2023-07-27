@@ -1,0 +1,48 @@
+.cases-section{
+    width: 1300px;
+    max-width: 90%;
+    margin: 5rem auto 3rem auto;
+    padding: 0.5rem 0.6rem;
+    color: #fff;
+    .cases-box{
+      background: #c06ecc;
+      position: relative;
+      height: 360px;
+      border-radius: 0.4rem;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      align-items: flex-start;
+      justify-content: flex-end;
+      transition: all 0.6s ease-in-out;
+      padding: 0.5rem;
+      .cases-info{
+        visibility: hidden;
+        transition: all 0.3s ease-out;
+        z-index: 12;
+      }
+      img{
+        position: absolute;
+        z-index: 1;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -40%);
+        backface-visibility: hidden;
+        object-fit: contain;
+        transition: all 0.5s ease-out;
+      }
+      &:hover{
+        background: linear-gradient(to top, #000, #c06ecc);
+      }
+
+      &:hover img{
+        backface-visibility: hidden;
+        transform: scale(0.5, 0.5);
+        transform: translate(-50%, -55%);
+        opacity: 1;
+      }
+      &:hover .cases-info{
+        visibility: visible;
+      }
+    }
+}

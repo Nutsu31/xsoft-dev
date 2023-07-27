@@ -2,6 +2,8 @@ import ProblemSolvingSection from "./components/probleSolvingSection/ProblemSolv
 import ItServiceSection from "./components/itSolutions/ItServiceSection";
 import Layout from "./components/Layout/Layout";
 import './page.css'
+import Cases from "./components/Cases/Cases";
+
 
 export default function Home() {
   return (
@@ -17,6 +19,9 @@ export default function Home() {
         <ProblemSolvingSection />
         <ItServiceSection />
       </div>
+      
+      <Cases/>
+      
     </Layout>
   );
 }
