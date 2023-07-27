@@ -4,7 +4,7 @@
   border-radius: 50%;
   position: absolute;
   left: 100px;
-  top: 100px;
+  top: 600px;
   background: rgb(2, 28, 83);
   background: radial-gradient(
     circle,
@@ -12,5 +12,6 @@
     rgba(153, 2, 186, 1) 26%,
     rgba(0, 212, 255, 1) 57%
   );
+  z-index: -1;
   filter: blur(120px);
 }
