@@ -1,7 +1,6 @@
 import React from "react";
 import "./Header.scss";
 import Image from "next/image";
-import Logo from "../../assets/Logo.jpg";
 import Logo1 from "@/app/assets/xsoft12.png";
 import Link from "next/link";
 
