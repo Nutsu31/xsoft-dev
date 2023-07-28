@@ -31,7 +31,7 @@ const Form = () => {
 
   const StyledTextarea = styled(TextareaAutosize)(
     ({ theme }) => `
-        width: 568px;
+        width: 100%;
         font-family: IBM Plex Sans, sans-serif;
         font-size: 1rem;
         font-weight: 400;
@@ -53,26 +53,41 @@ const Form = () => {
       `
   );
   return (
-    <form style={{ display: "flex", flexDirection: "column", gap: 16 }}>
-      <Box sx={{ display: "flex" }}>
+    <form className={Styles.form}>
+      <Box
+        sx={{
+          display: "flex",
+          flexDirection: { xs: "column", xl: "row" },
+          gap: { xs: 2 },
+        }}
+      >
         <TextField
           type="text"
-          className={Styles.textField}
           placeholder="Name*"
-          sx={{ color: "white" }}
+          sx={{
+            background: "#4a4a4a",
+            color: "white",
+            borderRadius: "10px",
+          }}
+          fullWidth
         />
         <TextField
           type="text"
-          className={Styles.textField}
           placeholder="Phone Number"
+          fullWidth
+          sx={{
+            background: "#4a4a4a",
+            color: "white",
+            borderRadius: "10px",
+          }}
         />
       </Box>
       <TextField
         type="text"
+        fullWidth
         sx={{
           background: "#4a4a4a",
           color: "white",
-          width: 568,
           borderRadius: "10px",
         }}
         placeholder="Email Address"
@@ -85,7 +100,7 @@ const Form = () => {
         placeholder="About your project"
       />
       <IntrestedOn />
-      <Button variant="contained" sx={{ width: 568, height: 60 }}>
+      <Button variant="contained" fullWidth sx={{ height: 60 }}>
         Send
       </Button>
     </form>

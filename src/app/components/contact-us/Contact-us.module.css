@@ -12,7 +12,7 @@
 
 .sectionWrapper {
   width: 1000px;
-  margin: 100px auto;
+  margin: 200px auto;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -59,33 +59,36 @@
     rgba(0, 212, 255, 1) 73%
   );
   filter: blur(100px);
-  position: absolute;
-  right: -250px;
-  top: 50px;
+  position: fixed;
+  right: 250px;
+  top: 250px;
   z-index: -1;
 }
 
 /* //////////////////////////////////////// */
 .formSectionWrapper {
   width: 1000px;
-  margin: 64px auto;
+  margin: 200px auto;
   display: flex;
   justify-content: space-between;
   gap: 40px;
 }
-
-.formTextWrapper {
-  width: 600px;
+.form {
+  width: 500px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  gap: 16px;
+}
+.formTextWrapper {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
   gap: 16px;
 }
 
 .formText {
   color: #fff;
   font-size: 44px;
-  width: 600px;
 }
 .span {
   text-align: center;
@@ -107,4 +110,83 @@
   display: flex;
   align-items: center;
   gap: 20px;
+}
+
+@media (max-width: 1120px) {
+  .form {
+    width: 400px;
+  }
+  .formSectionWrapper {
+    justify-content: center;
+    gap: 24px;
+  }
+  .formText {
+    font-size: 38px;
+  }
+  .formParagraph {
+    font-size: 22px;
+  }
+}
+@media (max-width: 1020px) {
+  .form {
+    width: 350px;
+  }
+  .formSectionWrapper {
+    width: 100%;
+  }
+  .formText {
+    font-size: 32px;
+  }
+  .formParagraph {
+    font-size: 18px;
+    width: 400px;
+  }
+  .formTextWrapper {
+    width: 400px;
+  }
+  .aLink {
+    font-size: 28px;
+  }
+}
+@media (max-width: 830px) {
+  .form {
+    width: 280px;
+  }
+  .formText {
+    font-size: 28px;
+    width: 320px;
+  }
+  .formParagraph {
+    font-size: 18px;
+    width: 300px;
+  }
+  .aLink {
+    font-size: 20px;
+  }
+}
+@media (max-width: 660px) {
+  .formSectionWrapper {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 48px;
+  }
+  .formTextWrapper {
+    text-align: center;
+    width: 100%;
+    align-items: center;
+  }
+  .form {
+    width: 100%;
+  }
+  .formText {
+    font-size: 28px;
+    width: 100%;
+  }
+  .formParagraph {
+    font-size: 18px;
+    width: 100%;
+  }
+  .aLink {
+    font-size: 20px;
+  }
 }
