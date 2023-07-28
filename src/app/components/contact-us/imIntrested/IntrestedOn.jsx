@@ -16,10 +16,6 @@ const interested = [
 
 const IntrestedOn = () => {
   const [checkbox, setChecked] = useState([]);
-  console.log(
-    "🚀 ~ file: IntrestedOn.jsx:19 ~ IntrestedOn ~ checkbox:",
-    checkbox
-  );
 
   const handleFilter = (item, isChecked) => {
     if (isChecked) {
