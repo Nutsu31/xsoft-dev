@@ -27,7 +27,7 @@ const IntrestedOn = () => {
 
   return (
     <div>
-      <h1 className={Styles.headerText}>I'm interested in:</h1>
+      <h1 className={Styles.headerText}>Im interested in:</h1>
       <div className={Styles.buttonWrapper}>
         {interested.map((item) => (
           <Buttons
