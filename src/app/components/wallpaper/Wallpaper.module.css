@@ -38,12 +38,10 @@
   align-items: flex-start;
   justify-content: space-evenly;
   top: 0;
-  opacity: 0;
+  opacity: 1;
   transition: 0.5s ease;
 }
-.shadow:hover {
-  opacity: 1;
-}
+
 .headerTxt {
   width: 400px;
   color: white;
@@ -51,7 +49,7 @@
 
 .infoTxt {
   width: 600px;
-  color: gray;
+  color: rgb(212, 212, 212);
 }
 .btn {
   color: white;
