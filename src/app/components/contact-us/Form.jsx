@@ -84,7 +84,8 @@ const Form = () => {
         minRows={6}
         placeholder="About your project"
       />
-      <IntrestedOn />
+      <IntrestedOn /> 
+      
       <Button variant="contained" sx={{ width: 568, height: 60 }}>
         Send
       </Button>
