@@ -1,12 +1,18 @@
-import React from "react";
+"use client";
 import Styles from "./Wallpaper.module.css";
 import Wallpaper from "@/app/assets/wallpaper.png";
 import Image from "next/image";
+import React from "react";
+import Vid from "@/app/assets/vid2.mp4";
+import ReactPlayer from "react-player";
 const WallpaperSection = () => {
   return (
     <div className={Styles.imgWrapper}>
       <div className={Styles.imgShadow}>
-        <Image src={Wallpaper} alt="wallpaper" className={Styles.img} />
+        <video loop muted autoPlay className={Styles.img}>
+          <source src={Vid} type="video/mp4" />
+        </video>
+        {/* <Image src={Wallpaper} alt="wallpaper" className={Styles.img} /> */}
       </div>
       <div className={Styles.shadow}>
         <h1 className={Styles.headerTxt}>
