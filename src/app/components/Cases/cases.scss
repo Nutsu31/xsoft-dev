@@ -21,6 +21,7 @@
       visibility: hidden;
       transition: all 0.3s ease-out;
       z-index: 12;
+      max-width: 100%;
     }
     img {
       position: absolute;
@@ -74,15 +75,20 @@
   
 }
 
-@media (max-width: 471){ 
-  .css-phooid-MuiGrid2-root{
+@media (max-width: 471px){ 
+  .cases-section{
+
     .cases-box{
       width: 300px;
       max-width: 100%;
+
+      img{
+        width: 100%;
+        object-fit: contain;
+      }
+
     }
 
   } 
-    
-  
 }
 
