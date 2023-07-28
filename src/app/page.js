@@ -23,7 +23,7 @@ export default function Home() {
           position: "relative",
           width: "1060px",
           maxWidth: "90%",
-          margin: "0 auto"
+          margin: "15rem auto"
         }}
       >
         <WallpaperSection />
