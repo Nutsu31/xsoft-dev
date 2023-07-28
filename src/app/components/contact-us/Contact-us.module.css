@@ -1,0 +1,110 @@
+.textArea {
+  resize: none;
+}
+
+.textField {
+  width: 280px;
+  color: white;
+  background: #4a4a4a;
+  border-radius: 10px;
+  margin-right: 10px;
+}
+
+.sectionWrapper {
+  width: 1000px;
+  margin: 100px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  position: relative;
+  gap: 100px;
+}
+
+.headerText {
+  color: white;
+  font-size: 96px;
+  font-weight: 700;
+}
+
+.paragraphHeader {
+  color: hsla(0, 0%, 100%, 0.7);
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 38px;
+  margin-bottom: 16px;
+}
+
+.paragraph {
+  color: white;
+  font-size: 32px;
+  text-decoration: none;
+}
+
+.paragraphWrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.circle {
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  background: rgb(2, 0, 36);
+  background: radial-gradient(
+    circle,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(121, 9, 118, 1) 38%,
+    rgba(0, 212, 255, 1) 73%
+  );
+  filter: blur(100px);
+  position: absolute;
+  right: -250px;
+  top: 50px;
+  z-index: -1;
+}
+
+/* //////////////////////////////////////// */
+.formSectionWrapper {
+  width: 1000px;
+  margin: 64px auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.formTextWrapper {
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 16px;
+}
+
+.formText {
+  color: #fff;
+  font-size: 44px;
+  width: 600px;
+}
+.span {
+  text-align: center;
+  width: 50px;
+  border-radius: 10px;
+  background-color: #0734fca2;
+}
+
+.formParagraph {
+  color: gray;
+  width: 500px;
+  font-size: 24px;
+}
+
+.aLink {
+  text-decoration: none;
+  font-size: 36px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}

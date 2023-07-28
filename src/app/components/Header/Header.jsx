@@ -2,7 +2,6 @@
 import React, { useState } from "react";
 import "./Header.scss";
 import Image from "next/image";
-import Logo from "../../assets/Logo.jpg";
 import Logo1 from "@/app/assets/xsoft12.png";
 import Link from "next/link";
 import { BiMenu, BiX } from "react-icons/bi";
@@ -28,7 +27,7 @@ const Header = () => {
                 <Link href="/">Home</Link>
               </li>
               <li>
-                <Link href="/about">About</Link>
+                <Link href="/about-company">About</Link>
               </li>
               <li>
                 <Link href="/contact">Contact</Link>
