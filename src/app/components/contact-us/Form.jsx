@@ -2,11 +2,36 @@
 import TextareaAutosize from "@mui/base/TextareaAutosize";
 import { Box, Button, TextField } from "@mui/material";
 import { styled } from "@mui/system";
-import React from "react";
+import React, { useState } from "react";
 import Styles from "./Contact-us.module.css";
 import IntrestedOn from "./imIntrested/IntrestedOn";
+import emailjs from "@emailjs/browser";
 
 const Form = () => {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [number, setNumber] = useState("");
+  const [message, setMessage] = useState("");
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+    emailjs
+      .send(
+        "service_thcdbte",
+        "template_cv4mutu",
+        {name,email,number,message: "message"},
+        "AckxIGcSUu7dGG0RA"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
+
   const blue = {
     100: "#DAECFF",
     200: "#b6daff",
@@ -53,7 +78,7 @@ const Form = () => {
       `
   );
   return (
-    <form className={Styles.form}>
+    <form className={Styles.form} onSubmit={(e)=> sendEmail(e)}>
       <Box
         sx={{
           display: "flex",
@@ -69,6 +94,7 @@ const Form = () => {
             color: "white",
             borderRadius: "10px",
           }}
+          onChange={(event) => setName(event.target.value)}
           fullWidth
         />
         <TextField
@@ -80,6 +106,7 @@ const Form = () => {
             color: "white",
             borderRadius: "10px",
           }}
+          onChange={(event) => setNumber(event.target.value)}
         />
       </Box>
       <TextField
@@ -90,6 +117,7 @@ const Form = () => {
           color: "white",
           borderRadius: "10px",
         }}
+        onChange={(event) => setEmail(event.target.value)}
         placeholder="Email Address"
       />
 
@@ -98,10 +126,10 @@ const Form = () => {
         aria-label="minimum height"
         minRows={6}
         placeholder="About your project"
+        onChange={(event) => setMessage(event.target.value)}
       />
       <IntrestedOn />
-      <Button variant="contained" fullWidth sx={{ height: 60 }}>
-
+      <Button variant="contained" fullWidth sx={{ height: 60 }} onClick={sendEmail}>
         Send
       </Button>
     </form>

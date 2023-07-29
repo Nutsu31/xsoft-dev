@@ -24,6 +24,11 @@ const CasesArray=[
         title: "Fin Pro",
         text: "CRM system for a fintech startup with a built-in call function.",
         img: "https://itrum.ru/assets/components/cases/macbook_16_1x.webp"
+    },{
+        id: 6,
+        title: "",
+        text: "",
+        img: ""
     },
 
 ]

@@ -5,7 +5,7 @@ import FormSection from "../components/contact-us/FormSection";
 const Contact = () => {
   return (
     <Layout>
-      {/* <FirstSection /> */}
+      <FirstSection />
       <FormSection />
     </Layout>
   );
