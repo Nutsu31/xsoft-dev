@@ -1,59 +1,61 @@
 "use client";
-import TextareaAutosize from "@mui/base/TextareaAutosize";
 import { Box, Button, TextField } from "@mui/material";
-import { styled } from "@mui/system";
-import React from "react";
+import React, { useState, useEffect, useMemo } from "react";
 import Styles from "./Contact-us.module.css";
 import IntrestedOn from "./imIntrested/IntrestedOn";
-
+import emailjs from "@emailjs/browser";
+import { Oval } from "react-loader-spinner";
 const Form = () => {
-  const blue = {
-    100: "#DAECFF",
-    200: "#b6daff",
-    400: "#3399FF",
-    500: "#007FFF",
-    600: "#0072E5",
-    900: "#003A75",
-  };
+  const [checked, setChecked] = useState([]);
+  const [error, setError] = useState("");
+  const [loading, setLoading] = useState(false);
+  const interestedIn = checked.join(",");
+  const [emailing, setEmailing] = useState({
+    name: "",
+    email: "",
+    number: "",
+    message: "",
+  });
 
-  const grey = {
-    50: "#f6f8fa",
-    100: "#eaeef2",
-    200: "#d0d7de",
-    300: "#afb8c1",
-    400: "#8c959f",
-    500: "#6e7781",
-    600: "#57606a",
-    700: "#424a53",
-    800: "#32383f",
-    900: "#24292f",
+  const memo = useMemo(() => {
+    return {
+      name: emailing.name,
+      email: emailing.email,
+      number: emailing.number,
+      message:
+        emailing.message +
+        " " +
+        "(& User interested in " +
+        interestedIn +
+        " ) ",
+    };
+  }, [checked]);
+  const handleCheck = (e) => {
+    const value = e.target.value;
+    const reg = /^[0-9]+$/;
+    if (reg.test(value)) {
+      setEmailing({ ...emailing, number: value });
+    } else {
+      return setError("Invalid number");
+    }
   };
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setLoading(true);
 
-  const StyledTextarea = styled(TextareaAutosize)(
-    ({ theme }) => `
-        width: 100%;
-        font-family: IBM Plex Sans, sans-serif;
-        font-size: 1rem;
-        font-weight: 400;
-        line-height: 1.5;
-        padding: 12px;
-        border-radius: 12px;
-        color: white !important;
-        background: #4a4a4a !important;
-      
-        &:focus {
-          border-color: ${blue[400]};
-   
-        }
-      
-        // firefox
-        &:focus-visible {
-          outline: 0;
-        }
-      `
-  );
+    emailjs
+      .send("service_ewooohc", "template_8tet1q6", memo, "ohIkuAroMbBldjcPE")
+      .then((res) => {
+        setLoading(false);
+        alert("Send Successful");
+      })
+      .catch((error) => {
+        setLoading(false);
+        alert("Send Failed");
+      });
+  };
   return (
-    <form className={Styles.form}>
+    <form className={Styles.form} onSubmit={(e) => handleSubmit(e)}>
       <Box
         sx={{
           display: "flex",
@@ -64,6 +66,8 @@ const Form = () => {
         <TextField
           type="text"
           placeholder="Name*"
+          value={emailing.name}
+          onChange={(e) => setEmailing({ ...emailing, name: e.target.value })}
           sx={{
             background: "#4a4a4a",
             color: "white",
@@ -74,6 +78,8 @@ const Form = () => {
         <TextField
           type="text"
           placeholder="Phone Number"
+          value={emailing.number}
+          onChange={(e) => handleCheck(e)}
           fullWidth
           sx={{
             background: "#4a4a4a",
@@ -83,26 +89,40 @@ const Form = () => {
         />
       </Box>
       <TextField
-        type="text"
+        type="email"
+        required
+        value={emailing.email}
         fullWidth
         sx={{
           background: "#4a4a4a",
           color: "white",
           borderRadius: "10px",
         }}
+        onChange={(e) => setEmailing({ ...emailing, email: e.target.value })}
         placeholder="Email Address"
       />
-
-      <StyledTextarea
+      <textarea
         className={Styles.textArea}
-        aria-label="minimum height"
-        minRows={6}
+        rows={6}
         placeholder="About your project"
+        onChange={(e) => setEmailing({ ...emailing, message: e.target.value })}
+        value={emailing.message}
       />
-      <IntrestedOn />
-      <Button variant="contained" fullWidth sx={{ height: 60 }}>
-
-        Send
+      <IntrestedOn setChecked={setChecked} checked={checked} />
+      <Button variant="contained" type="submit" fullWidth sx={{ height: 60 }}>
+        {loading ? (
+          <Oval
+            height="36"
+            width="36"
+            radius="9"
+            color="white"
+            ariaLabel="loading"
+            wrapperStyle
+            wrapperClass
+          />
+        ) : (
+          "Send"
+        )}
       </Button>
     </form>
   );

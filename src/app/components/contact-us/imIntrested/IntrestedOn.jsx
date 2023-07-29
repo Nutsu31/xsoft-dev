@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import Buttons from "./Buttons";
 import Styles from "./IntrestedOn.module.css";
+import { v4 as uuid } from "uuid";
 const interested = [
   "CRM",
   "Mobile App",
@@ -14,9 +15,7 @@ const interested = [
   "Other",
 ];
 
-const IntrestedOn = () => {
-  const [checkbox, setChecked] = useState([]);
-
+const IntrestedOn = ({ checked, setChecked }) => {
   const handleFilter = (item, isChecked) => {
     if (isChecked) {
       setChecked((prev) => [...prev, item]);
@@ -27,13 +26,13 @@ const IntrestedOn = () => {
 
   return (
     <div>
-      <h1 className={Styles.headerText}>I'm interested in:</h1>
+      <h1 className={Styles.headerText}>Im interested in:</h1>
       <div className={Styles.buttonWrapper}>
         {interested.map((item) => (
           <Buttons
             item={item}
-            key={item}
-            isChecked={checkbox.includes(item)}
+            key={uuid()}
+            isChecked={checked.includes(item)}
             onChange={(isChecked) => handleFilter(item, isChecked)}
           />
         ))}

@@ -22,6 +22,7 @@ import OutStaffBlue from "@/app/assets/svg/outstaffBlue.svg";
 
 import Figma from "@/app/assets/svg/figma.svg";
 import FigmaBlue from "@/app/assets/svg/figmaBlue.svg";
+import { v4 as uuid } from "uuid";
 
 const textArr = [
   {
@@ -114,9 +115,7 @@ const ItServiceSection = () => {
   return (
     <div className={Styles.grid}>
       {textArr.map((item) => {
-        return (
-          <ItService key={Math.random() * Math.random()} text={item.text} />
-        );
+        return <ItService key={uuid()} text={item.text} />;
       })}
     </div>
   );
