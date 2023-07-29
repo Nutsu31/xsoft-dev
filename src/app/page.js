@@ -6,10 +6,8 @@ import Cases from "./components/Cases/Cases";
 import RoundCircle from "./components/roundCircle/RoundCircle";
 import SectionHeader from "./components/SectionHeader/SectionHeader";
 import WallpaperSection from "./components/wallpaper/WallpaperSection";
-import FirstSection from "./components/contact-us/FirstSection";
 import FormSection from "./components/contact-us/FormSection";
-
-
+import Chosen from "./components/Chosen/Chosen";
 const header1 = "We are focused on solving your problems";
 const header2 = "IT solutions for business";
 
@@ -39,11 +37,8 @@ export default function Home() {
         </div>
       </div>
       <Cases />
-
-      <div>
-        <FormSection />
-      </div>
-
+      <Chosen />
+      <FormSection />
     </Layout>
   );
 }

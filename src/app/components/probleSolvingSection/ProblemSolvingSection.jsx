@@ -1,6 +1,7 @@
 import React from "react";
 import ServiceBox from "./ServiceBox";
 import Styles from "./ProblemSolvingSection.module.css";
+import { v4 as uuid } from "uuid";
 
 const textArr = [
   {
@@ -51,9 +52,7 @@ const ProblemSolvingSection = () => {
   return (
     <div className={Styles.grid}>
       {textArr.map((item) => {
-        return (
-          <ServiceBox key={Math.random() * Math.random()} text={item.text} />
-        );
+        return <ServiceBox key={uuid()} text={item.text} />;
       })}
     </div>
   );

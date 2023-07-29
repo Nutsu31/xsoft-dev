@@ -1,16 +1,13 @@
+"use client"
 import React from "react";
 import CasesArray from "./cases-data";
 import "./cases.scss";
 import Box from "@mui/material/Box";
 import Grid from "@mui/material/Unstable_Grid2";
 import Image from "next/image";
-import Link from 'next/link';
+import { Link as LinkScroll } from "react-scroll";
 
 const Cases = () => {
-
-
-
-
   return (
     <div className="cases-section">
       <Box sx={{ flexGrow: 1 }}>
@@ -22,7 +19,7 @@ const Cases = () => {
           {CasesArray.map((item, index) =>
             index === 0 ? ( // Check if index is 0
               <Grid xs={6} md={8} key={index}>
-                <div className='cases-box'>
+                <div className="cases-box">
                   <div className="cases-info">
                     <h3>{item.title}</h3>
                     <p>{item.text}</p>
@@ -35,21 +32,28 @@ const Cases = () => {
                   />
                 </div>
               </Grid>
-            ) : index === CasesArray.length-1 ? ( 
+            ) : index === CasesArray.length - 1 ? (
               <Grid xs={2} sm={4} md={4} key={index}>
-              <Link scroll={true} href='/#contactUs' passHref legacyBehavior >
-              <div className='add-project'>
-                <div className="add-project-box">
-                   <div className="add-line"></div>
-                   <div className="add-line"></div>
-                </div>
-              </div>
-              </Link>
-            </Grid>
-            ) :  (
+                <LinkScroll
+                  activeClass="active"
+                  to="contactUs"
+                  spy={true}
+                  smooth={true}
+                  offset={-150}
+                  duration={500}
+                >
+                  <div className="add-project">
+                    <div className="add-project-box">
+                      <div className="add-line"></div>
+                      <div className="add-line"></div>
+                    </div>
+                  </div>
+                </LinkScroll>
+              </Grid>
+            ) : (
               // For other indices (not 0 or 5)
               <Grid xs={2} sm={4} md={4} key={index}>
-                <div className='cases-box'>
+                <div className="cases-box">
                   <div className="cases-info">
                     <h3>{item.title}</h3>
                     <p>{item.text}</p>
