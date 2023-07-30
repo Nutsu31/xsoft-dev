@@ -1,6 +1,7 @@
 import React from "react";
 import Styles from "./styles/ServiceOperations.module.css";
 import EachOperation from "./EachOperation";
+import { v4 as uuid } from "uuid";
 import {
   Message,
   Article,
@@ -60,6 +61,7 @@ const ServiceOperations = () => {
     <div style={{ display: "flex", flexWrap: "wrap" }}>
       {infoArr.map((item) => (
         <EachOperation
+          key={uuid()}
           headerTxt={item.headerTxt}
           bodyTxt={item.bodyTxt}
           Icon={item.Icon}
