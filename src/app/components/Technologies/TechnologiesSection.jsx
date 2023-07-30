@@ -120,7 +120,7 @@ const TechnologiesSection = () => {
   return (
     <div className={Styles.container}>
       {techInfo.map((items) => (
-        <EachTechnologies items={items} />
+        <EachTechnologies items={items} key={uuid()} />
       ))}
     </div>
   );
