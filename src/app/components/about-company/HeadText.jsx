@@ -14,7 +14,7 @@ const HeadText = () => {
         their business in the online sector.
       </p>
       <p className={Styles.p}>
-        We are focused on solving the client's problems and the exact result in
+        We are focused on solving the clients problems and the exact result in
         numbers.
       </p>
     </div>
