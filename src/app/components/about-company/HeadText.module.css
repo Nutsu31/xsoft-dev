@@ -4,8 +4,10 @@
   justify-content: center;
   flex-direction: column;
   gap: 56px !important;
-  margin: 146px auto !important;
+  margin: 200px auto 50px !important;
   position: relative;
+  overflow: hidden;
+  box-shadow: -40px -80px 100px 50px black inset;
 }
 .h1 {
   color: white;
@@ -17,11 +19,13 @@
   width: 800px;
 }
 .bgImage {
+  width: 700px;
+  height: 700px;
+  filter: opacity(0.4);
   position: absolute;
-  z-index: -2;
-  filter: opacity(0.5) blur(3px);
   top: 20px;
-  right: 0px;
+  right: -70px;
+  z-index: -1;
 }
 @media (max-width: 1020px) {
   .textWrapper {
