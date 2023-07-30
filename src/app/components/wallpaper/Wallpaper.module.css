@@ -111,21 +111,6 @@
   .shadow {
     justify-content: flex-start;
     height: 400px;
-  }
-  .imgWrapper {
-    height: 400px;
-  }
-  .headerTxt {
-    width: 300px;
-    font-size: 24px;
-  }
-  .infoTxt {
-    width: 300px;
-    font-size: 18px;
-  }
-  .btn {
-    width: 100px;
-    height: 40px;
-    font-size: 16px;
+    padding: 016px;
   }
 }
