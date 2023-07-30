@@ -1,24 +1,31 @@
 .textWrapper {
-  width: 100%;
+  width: 1000px;
   display: flex;
   justify-content: center;
   flex-direction: column;
   gap: 56px !important;
-  padding: 0 156px;
-  margin: 126px 0 0 0;
+  margin: 146px auto !important;
+  position: relative;
 }
 .h1 {
   color: white;
   font-size: 96px;
 }
 .p {
-  color: gray;
+  color: rgb(155, 155, 155);
   font-size: 28px;
   width: 800px;
 }
-
+.bgImage {
+  position: absolute;
+  z-index: -2;
+  filter: opacity(0.5) blur(3px);
+  top: 20px;
+  right: 0px;
+}
 @media (max-width: 1020px) {
   .textWrapper {
+    width: 100%;
     padding: 0 73px;
   }
   .p {
@@ -29,6 +36,10 @@
 @media (max-width: 760px) {
   .h1 {
     font-size: 68px;
+  }
+  .bgImage {
+    width: 400px;
+    height: 400px;
   }
 }
 @media (max-width: 570px) {
