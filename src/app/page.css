@@ -3,9 +3,13 @@
   padding: 0;
   box-sizing: border-box;
 }
-body {
-  /* background-color: #161616; */
-  background: black;
+.body {
   width: 100%;
-  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin: 100px auto;
 }

@@ -14,17 +14,7 @@ const header2 = "IT solutions for business";
 export default function Home() {
   return (
     <Layout>
-      <div
-        style={{
-          display: "flex",
-          gap: 100,
-          flexDirection: "column",
-          alignItems: "center",
-          justifyContent: "center",
-          position: "relative",
-          margin: "5rem auto",
-        }}
-      >
+      <div className="body">
         <WallpaperSection />
         <RoundCircle />
         <div>

@@ -2,13 +2,21 @@
 import Styles from "./Wallpaper.module.css";
 import React from "react";
 import Vid from "@/app/assets/vid2.mp4";
+import Image from "next/image";
+import bg from "@/app/assets/w1.png";
+import { useMediaQuery } from "@mui/material";
 const WallpaperSection = () => {
+  const max600px = useMediaQuery("(max-width:600px)");
   return (
     <div className={Styles.imgWrapper}>
       <div className={Styles.imgShadow}>
-        <video loop muted autoPlay className={Styles.img}>
-          <source src={Vid} type="video/mp4" />
-        </video>
+        {max600px ? (
+          <Image src={bg} alt="" className={Styles.img} />
+        ) : (
+          <video loop muted autoPlay className={Styles.video}>
+            <source src={Vid} type="video/mp4" />
+          </video>
+        )}
       </div>
       <div className={Styles.shadow}>
         <h1 className={Styles.headerTxt}>
