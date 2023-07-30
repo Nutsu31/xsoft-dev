@@ -29,6 +29,7 @@ const Form = () => {
         interestedIn +
         " ) ",
     };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [checked]);
   const handleCheck = (e) => {
     const value = e.target.value;
@@ -86,7 +87,6 @@ const Form = () => {
             color: "white",
             borderRadius: "10px",
           }}
-       
         />
       </Box>
       <TextField
