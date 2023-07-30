@@ -76,16 +76,14 @@ const Header = () => {
               <Link href="/">Home</Link>
             </li>
             <li onClick={menuBtnHandler}>
-              <Link href="/about">About</Link>
+              <Link href="/services">Services</Link>
+            </li>
+
+            <li onClick={menuBtnHandler}>
+              <Link href="/about-company">About</Link>
             </li>
             <li onClick={menuBtnHandler}>
               <Link href="/contact">Contact</Link>
-            </li>
-            <li onClick={menuBtnHandler}>
-              <Link href="/">Home</Link>
-            </li>
-            <li onClick={menuBtnHandler}>
-              <Link href="/about">About</Link>
             </li>
           </ul>
         </div>
