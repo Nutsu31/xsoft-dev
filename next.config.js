@@ -3,15 +3,21 @@ const nextConfig = {
   images: {
     domains: ["itrum.ru"],
   },
-  webpack: (config) => {
+  webpack: (config, { isServer }) => {
+    if (!isServer) {
+      // Exclude 'fs' module from the client-side bundle
+      config.resolve.fallback.fs = false;
+    }
+
+    // Additional Webpack configuration for handling video files
     config.module.rules.push({
-      test: /\.(mov|mp4)$/, // Adjust the file extensions as needed
+      test: /\.(mov|mp4)$/, 
       use: {
         loader: "file-loader",
         options: {
           name: "[name].[ext]",
-          publicPath: "/_next/static/videos/", // Adjust the path as needed
-          outputPath: "static/videos/", // Adjust the path as needed
+          publicPath: "/_next/static/videos/", 
+          outputPath: "static/videos/", 
         },
       },
     });

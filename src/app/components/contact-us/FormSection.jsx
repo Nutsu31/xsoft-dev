@@ -4,7 +4,7 @@ import Form from "./Form";
 import Styles from "./Contact-us.module.css";
 const FormSection = () => {
   return (
-    <section className={Styles.formSectionWrapper}>
+    <section className={Styles.formSectionWrapper} id="contactUs">
       <FormTexts />
       <div>
         <Form />
