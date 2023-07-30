@@ -1,10 +1,11 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./Header.scss";
 import Image from "next/image";
 import Logo1 from "@/app/assets/xsoft12.png";
 import Link from "next/link";
 import { BiMenu, BiX } from "react-icons/bi";
+import { usePathname } from "next/navigation";
 
 const Header = () => {
   const [menu, setMenu] = useState(false);
@@ -12,9 +13,22 @@ const Header = () => {
     setMenu(!menu);
   };
 
+  function smoothScrollToTop() {
+    const scrollTop =
+      document.documentElement.scrollTop || document.body.scrollTop;
+    if (scrollTop > 0) {
+      window.requestAnimationFrame(smoothScrollToTop);
+      window.scrollTo(0, scrollTop - scrollTop / 8);
+    }
+  }
+  const path = usePathname();
+  useEffect(() => {
+    smoothScrollToTop();
+  }, [path]);
+
   return (
     <>
-      <header style={{display: menu ? 'none' : 'flex'}}>
+      <header style={{ display: menu ? "none" : "flex" }}>
         <div className="header-container">
           <div className="logo">
             <Link href="/">
@@ -25,6 +39,9 @@ const Header = () => {
             <ul>
               <li>
                 <Link href="/">Home</Link>
+              </li>
+              <li>
+                <Link href="/services">Services</Link>
               </li>
               <li>
                 <Link href="/about-company">About</Link>
