@@ -30,6 +30,7 @@
   width: 52px;
   height: 52px;
   border-radius: 10px;
-  padding: 10px;
+  padding: 8px;
+  font-size: 24px;
   background-color: rgb(19, 110, 196);
 }
