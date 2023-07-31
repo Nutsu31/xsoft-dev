@@ -1,0 +1,15 @@
+{
+    "Header":{
+        "Home": "Home",
+        "About": "About",
+        "Contact": "Contact",
+        "Services": "Services"
+    },
+    "Main": {
+        "headerText": "Development of mobile and web applications on a turnkey basis",
+        "InfoText": "Development of websites, mobile applications, online stores and internal portals on a turnkey basis. We ll find a solution that fits your budget and time frame.",
+        "ContactBtn": "Contact us"
+    }
+    
+}
+
