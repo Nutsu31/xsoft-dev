@@ -6,11 +6,11 @@ import Image from "next/image";
 import bg from "@/app/assets/w1.png";
 import { useMediaQuery } from "@mui/material";
 const WallpaperSection = () => {
-  const max600px = useMediaQuery("(max-width:600px)");
+  const max800px = useMediaQuery("(max-width:800px)");
   return (
     <div className={Styles.imgWrapper}>
       <div className={Styles.imgShadow}>
-        {max600px ? (
+        {max800px ? (
           <Image src={bg} alt="" className={Styles.img} />
         ) : (
           <video loop muted autoPlay className={Styles.video}>

@@ -32,3 +32,14 @@
   width: 100%;
   display: flex;
 }
+
+@media (max-width: 545px) {
+  .container {
+    width: 100%;
+    height: fit-content;
+  }
+  .imgParent {
+    flex-direction: column;
+    gap: 16px;
+  }
+}
