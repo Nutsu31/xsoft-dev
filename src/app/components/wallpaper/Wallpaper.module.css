@@ -33,7 +33,6 @@
   position: absolute;
   display: flex;
   flex-direction: column;
-
   gap: 30px;
   top: 0;
   opacity: 1;
@@ -43,7 +42,7 @@
 .headerTxt {
   width: 800px;
   color: white;
-  font-size: 56px;
+  font-size: 70px;
 }
 
 .infoTxt {

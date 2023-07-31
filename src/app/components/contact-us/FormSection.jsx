@@ -6,9 +6,7 @@ const FormSection = () => {
   return (
     <section className={Styles.formSectionWrapper} id="contactUs">
       <FormTexts />
-      <div>
-        <Form />
-      </div>
+      <Form />
     </section>
   );
 };

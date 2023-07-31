@@ -1,6 +1,6 @@
 "use client";
-import { Box, Button, TextField } from "@mui/material";
-import React, { useState, useEffect, useMemo } from "react";
+import { Box, Button } from "@mui/material";
+import React, { useState, useMemo } from "react";
 import Styles from "./Contact-us.module.css";
 import IntrestedOn from "./imIntrested/IntrestedOn";
 import emailjs from "@emailjs/browser";
@@ -64,43 +64,28 @@ const Form = () => {
           gap: { xs: 2 },
         }}
       >
-        <TextField
+        <input
           type="text"
           placeholder="Name*"
           value={emailing.name}
           onChange={(e) => setEmailing({ ...emailing, name: e.target.value })}
-          sx={{
-            background: "#4a4a4a",
-            color: "white",
-            borderRadius: "10px",
-          }}
-          fullWidth
+          className={Styles.input}
         />
-        <TextField
+        <input
           type="text"
           placeholder="Phone Number"
           value={emailing.number}
           onChange={(e) => handleCheck(e)}
-          fullWidth
-          sx={{
-            background: "#4a4a4a",
-            color: "white",
-            borderRadius: "10px",
-          }}
+          className={Styles.input}
         />
       </Box>
-      <TextField
+      <input
         type="email"
         required
         value={emailing.email}
-        fullWidth
-        sx={{
-          background: "#4a4a4a",
-          color: "white",
-          borderRadius: "10px",
-        }}
         onChange={(e) => setEmailing({ ...emailing, email: e.target.value })}
         placeholder="Email Address"
+        className={Styles.input}
       />
       <textarea
         className={Styles.textArea}

@@ -5,3 +5,10 @@
   flex-wrap: wrap;
   margin: 0 auto;
 }
+
+@media (max-width: 1045px) {
+  .container {
+    width: 100%;
+    justify-content: center;
+  }
+}
