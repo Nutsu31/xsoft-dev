@@ -15,7 +15,7 @@ const interested = [
   "Other",
 ];
 
-const IntrestedOn = ({ checked, setChecked }) => {
+const IntrestedOn = ({ checked, setChecked,lang }) => {
   const handleFilter = (item, isChecked) => {
     if (isChecked) {
       setChecked((prev) => [...prev, item]);
@@ -26,7 +26,7 @@ const IntrestedOn = ({ checked, setChecked }) => {
 
   return (
     <div>
-      <h1 className={Styles.headerText}>Im interested in:</h1>
+      <h1 className={Styles.headerText}>{lang.Interested}</h1>
       <div className={Styles.buttonWrapper}>
         {interested.map((item) => (
           <Buttons

@@ -12,6 +12,7 @@ import Chosen from "./components/Chosen/Chosen";
 import { getDictionary } from "../../../getDictionary";
 
 
+
 const header1 = "We are focused on solving your problems";
 const header2 = "IT solutions for business";
 
@@ -19,25 +20,26 @@ export default async function Home({params}) {
 
   const lang = await getDictionary(params?.lang)
 
-  console.log("params",params)
+  console.log(params)
+
 
   return (
     <Layout lang={lang} params={params?.lang}>
       <div className="body">
-        <WallpaperSection />
+        <WallpaperSection lang={lang} />
         <RoundCircle />
         <div>
-          <SectionHeader text={header1} />
-          <ProblemSolvingSection />
+          <SectionHeader lang={lang.SelectionHandlerone.Text} />
+          <ProblemSolvingSection lang={lang.problemSolving} />
         </div>
         <div>
-          <SectionHeader text={header2} />
-          <ItServiceSection />
+          <SectionHeader lang={lang.SelectionHandlertwo.Text} />
+          <ItServiceSection lang={lang} />
         </div>
       </div>
       <Cases />
-      <Chosen />
-      <FormSection />
+      <Chosen lang={lang} />
+      <FormSection lang={lang.formSection}/>
     </Layout>
   );
 }

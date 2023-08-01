@@ -1,7 +1,6 @@
-"use client"
 import "./globals.css";
 import { Inter } from "next/font/google";
-import { usePathname } from "next/navigation";
+
 
 const inter = Inter({ subsets: ["latin"] });
 

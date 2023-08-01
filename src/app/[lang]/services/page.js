@@ -4,11 +4,11 @@ import ServiceSection from "../components/servicepage/ServiceSection";
 import { getDictionary } from "../../../../getDictionary";
 
 const Services = async ({params}) => {
-
+  const lang = await getDictionary(params?.lang)
 
   return (
-    <Layout>
-      <ServiceSection />
+    <Layout params={params?.lang} lang={lang}>
+      <ServiceSection lang={lang} />
     </Layout>
   );
 };

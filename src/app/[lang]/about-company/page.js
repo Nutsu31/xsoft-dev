@@ -7,9 +7,9 @@ import FormSection from "../components/contact-us/FormSection";
 import { getDictionary } from "../../../../getDictionary";
 
 const About = async ({params}) => {
-
+  const lang = await getDictionary(params?.lang)
   return (
-    <Layout>
+    <Layout params={params?.lang} lang={lang}>
       <HeadText />
       <AboutSection />
       <Chosen />

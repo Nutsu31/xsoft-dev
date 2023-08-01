@@ -1,5 +1,5 @@
-"use client";
-import React, { useEffect } from "react";
+
+
 import ItService from "./ItService";
 import Styles from "./ItServiceSection.module.css";
 import Laptop from "@/app/[lang]/assets/svg/laptop.svg";
@@ -111,10 +111,11 @@ const textArr = [
   },
 ];
 
-const ItServiceSection = () => {
+const ItServiceSection = ({lang}) => {
+
   return (
     <div className={Styles.grid}>
-      {textArr.map((item) => {
+      {lang.ItSolutions.map((item) => {
         return <ItService key={uuid()} text={item.text} />;
       })}
     </div>

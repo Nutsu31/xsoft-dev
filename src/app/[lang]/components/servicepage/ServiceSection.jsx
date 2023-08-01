@@ -7,18 +7,18 @@ import Cases from "../Cases/Cases";
 import FormSection from "../contact-us/FormSection";
 import TechnologiesSection from "../Technologies/TechnologiesSection";
 
-const ServiceSection = () => {
+const ServiceSection = ({lang}) => {
   return (
     <div className={Styles.sectionWrapper}>
-      <ServiceHeader />
-      <ItServiceSection />
+      <ServiceHeader lang={lang.ServicePage.ServiceHeader} />
+      <ItServiceSection lang={lang} />
       <h1 className={Styles.h1}>Principle of operation</h1>
       <ServiceOperations />
       <h1 className={Styles.h1}>Technology stack</h1>
       <TechnologiesSection />
       <h1 className={Styles.h1}>Cases</h1>
       <Cases />
-      <FormSection />
+      <FormSection lang={lang.formSection} />
     </div>
   );
 };

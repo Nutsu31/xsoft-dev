@@ -25,7 +25,8 @@
       padding: 1.5rem 2rem;
       border-radius: 0.4rem;
       background: #242424;
-      min-height: 200px;
+      height: 220px;
+
       .title-image {
         display: flex;
         align-items: center;
@@ -53,33 +54,66 @@
 }
 
 @media (max-width: 862px) {
-    .chosen-container{
+  .chosen-container {
+    .chosen-boxes {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(4, 1fr);
+      grid-column-gap: 0px;
+      grid-row-gap: 0px;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+      .chosen-box {
+        height: auto;
+        
+      }
 
-        .chosen-boxes {
-            display: grid;
-            grid-template-columns: 1fr;
-            grid-template-rows: repeat(4, 1fr);
-            grid-column-gap: 0px;
-            grid-row-gap: 0px;
-            align-items: center;
-            justify-content: center;
-            gap: 1rem;
-
-            .chosen-box:nth-child(1) {
-               
-                grid-area: 1 / 1 / 2 / 2;
-              }
-              .chosen-box:nth-child(2) {
-                grid-area: 2 / 1 / 3 / 2; 
-              }
-              .chosen-box:nth-child(3) {
-                grid-area: 3 / 1 / 4 / 2; 
-              }
-              .chosen-box:nth-child(4) {
-                grid-area: 4 / 1 / 5 / 2;
-              }
-        }
-
+      .chosen-box:nth-child(1) {
+        grid-area: 1 / 1 / 2 / 2;
+      }
+      .chosen-box:nth-child(2) {
+        grid-area: 2 / 1 / 3 / 2;
+      }
+      .chosen-box:nth-child(3) {
+        grid-area: 3 / 1 / 4 / 2;
+      }
+      .chosen-box:nth-child(4) {
+        grid-area: 4 / 1 / 5 / 2;
+      }
     }
- 
+  }
 }
+
+
+@media (max-width: 400px) {
+  .chosen-container {
+    .chosen-boxes {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(4, 1fr);
+      grid-column-gap: 0px;
+      grid-row-gap: 0px;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+      .chosen-box {
+        height: auto;
+        .title-image {
+        
+          h5 {
+            font-size: 18px;
+            font-weight: 400;
+          }
+        }
+        .text{
+          font-size: 13px;
+          font-weight: 300;
+        }
+      }
+
+     
+    }
+  }
+}
+

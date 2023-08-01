@@ -5,7 +5,7 @@ import Vid from "@/app/[lang]/assets/vid2.mp4";
 import Image from "next/image";
 import bg from "@/app/[lang]/assets/w1.png";
 import { useMediaQuery } from "@mui/material";
-const WallpaperSection = () => {
+const WallpaperSection = ({lang}) => {
   const max800px = useMediaQuery("(max-width:800px)");
   return (
     <div className={Styles.imgWrapper}>
@@ -20,14 +20,12 @@ const WallpaperSection = () => {
       </div>
       <div className={Styles.shadow}>
         <h1 className={Styles.headerTxt}>
-          Development of mobile and web applications on a turnkey basis
+          {lang.Main.headerText}
         </h1>
         <p className={Styles.infoTxt}>
-          Development of websites, mobile applications, online stores and
-          internal portals on a turnkey basis. We ll find a solution that fits
-          your budget and time frame.
+          {lang.Main.InfoText}
         </p>
-        <button className={Styles.btn}>Contact us</button>
+        <button className={Styles.btn}>{lang.Main.ContactBtn}</button>
       </div>
     </div>
   );

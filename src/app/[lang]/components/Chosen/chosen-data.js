@@ -20,7 +20,6 @@ const ChosenArray=[
         text: "In our work, we use SCRUM and Agile methods to reduce time and costs. The entire development process is fully controlled by project management specialists - Project managers.",
         img: "https://itrum.ru/assets/components/reasons/heartbeat.svg"
     }
-
 ]
 
 export default ChosenArray;

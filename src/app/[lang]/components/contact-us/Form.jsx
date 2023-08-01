@@ -5,7 +5,7 @@ import Styles from "./Contact-us.module.css";
 import IntrestedOn from "./imIntrested/IntrestedOn";
 import emailjs from "@emailjs/browser";
 import { Oval } from "react-loader-spinner";
-const Form = () => {
+const Form = ({lang}) => {
   const [checked, setChecked] = useState([]);
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
@@ -94,7 +94,7 @@ const Form = () => {
         onChange={(e) => setEmailing({ ...emailing, message: e.target.value })}
         value={emailing.message}
       />
-      <IntrestedOn setChecked={setChecked} checked={checked} />
+      <IntrestedOn setChecked={setChecked} checked={checked} lang={lang} />
       <Button variant="contained" type="submit" fullWidth sx={{ height: 60 }}>
         {loading ? (
           <Oval
@@ -107,7 +107,7 @@ const Form = () => {
             wrapperClass
           />
         ) : (
-          "Send"
+          lang.sendBtn
         )}
       </Button>
     </form>

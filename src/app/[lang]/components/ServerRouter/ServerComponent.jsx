@@ -1,11 +1,12 @@
-'use client'
-import { usePathname } from "next/navigation";
+import { NextResponse } from 'next/server'
 
 
-export const ServerComponent = () => {
-    const path = usePathname();
+function ServerComponent(request) {
+  const pathname = request.nextUrl.pathname
+  const pathnameIsMissingLocale = locales.every(
+    (locale) => !pathname.startsWith(`/${locale}/`) && pathname !== `/${locale}`
+  )
 
-    console.log("replace",path)  
 };
-  
-  
+
+export default ServerComponent;

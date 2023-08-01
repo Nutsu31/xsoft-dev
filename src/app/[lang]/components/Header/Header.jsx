@@ -6,10 +6,10 @@ import Logo1 from "@/app/[lang]/assets/xsoft12.png";
 import Link from "next/link";
 import { BiMenu, BiX } from "react-icons/bi";
 import { usePathname } from "next/navigation";
-import { useRouter } from "next/navigation";
-import Georgia from '../../assets/georgia.jpg';
-import England from '../../assets/england.png';
-// import {ServerComponent} from "../ServerRouter/ServerComponent";
+import Georgia from '../../assets/georgiaIcon.png';
+import England from '../../assets/englandIcon.png';
+
+
 
 const Header = ({lang,params}) => {
   const [menu, setMenu] = useState(false);
@@ -25,6 +25,15 @@ const Header = ({lang,params}) => {
       window.scrollTo(0, scrollTop - scrollTop / 8);
     }
   }
+  
+  const pathname = usePathname();
+  const currentLanguage = pathname.split('/')[1];
+  const pathWithoutLanguage = pathname.replace(`/${currentLanguage}`, '');
+  const kaLink= `/ka${pathWithoutLanguage}`;
+  const enLink= `/en${pathWithoutLanguage}`;
+
+
+console.log(pathname)
   const path = usePathname();
   useEffect(() => {
     smoothScrollToTop();
@@ -35,29 +44,29 @@ const Header = ({lang,params}) => {
       <header style={{ display: menu ? "none" : "flex" }}>
         <div className="header-container">
           <div className="logo">
-            <Link href="/">
+            <Link href={`/${params}`}>
               <Image src={Logo1} alt="Picture of the author" />
             </Link>
           </div>
           <div className="menu">
             <ul>
               <li>
-                <Link href="/">{lang.Header.Home}</Link>
+                <Link href={`/${params}`}>{lang.Header.Home}</Link>
               </li>
               <li>
-                <Link href="/services">{lang.Header.Services}</Link>
+                <Link href={`/${params}/services`}>{lang.Header.Services}</Link>
               </li>
               <li>
-                <Link href="/about-company">{lang.Header.About}</Link>
+                <Link href={`/${params}/about-company`}>{lang.Header.About}</Link>
               </li>
               <li>
-                <Link href="/contact">{lang.Header.Contact}</Link>
+                <Link href={`/${params}/contact`}>{lang.Header.Contact}</Link>
               </li>
-              <li>
+              <li className="languages">
                 { params ==='en' ? (
-                  <Image src={Georgia} alt="Picture of the author" />
+                  <Link href={kaLink}><Image src={Georgia} alt="Picture of the author" /> <span>ქართული</span></Link> 
                 ) : (
-                  <Image src={England} alt="Picture of the author" />
+                  <Link href={enLink}><Image src={England} alt="Picture of the author" /> <span>English</span></Link>
                 )}
               </li>
             </ul>
@@ -84,18 +93,25 @@ const Header = ({lang,params}) => {
         <div className="menu">
           <ul>
             <li onClick={menuBtnHandler}>
-              <Link href="/">Home</Link>
+            <Link href={`/${params}`}>{lang.Header.Home}</Link>
             </li>
             <li onClick={menuBtnHandler}>
-              <Link href="/services">Services</Link>
+            <Link href={`/${params}/services`}>{lang.Header.Services}</Link>
             </li>
 
             <li onClick={menuBtnHandler}>
-              <Link href="/about-company">About</Link>
+            <Link href={`/${params}/about-company`}>{lang.Header.About}</Link>
             </li>
             <li onClick={menuBtnHandler}>
-              <Link href="/contact">Contact</Link>
+            <Link href={`/${params}/contact`}>{lang.Header.Contact}</Link>
             </li>
+            <li className="languages" >
+                { params ==='en' ? (
+                  <Link href={kaLink}><Image src={Georgia} alt="Picture of the author" /> <span>ქართული</span></Link> 
+                ) : (
+                  <Link href={enLink}><Image src={England} alt="Picture of the author" /> <span>English</span></Link>
+                )}
+              </li>
           </ul>
         </div>
       </div>

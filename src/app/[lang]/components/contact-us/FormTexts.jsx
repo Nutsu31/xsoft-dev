@@ -2,17 +2,15 @@
 import React from "react";
 import { Facebook, Telegram } from "@mui/icons-material";
 import Styles from "./Contact-us.module.css";
-const FormTexts = () => {
+const FormTexts = ({lang}) => {
   return (
     <div className={Styles.formTextWrapper}>
       <h1 className={Styles.formText}>
-        Order<span className={Styles.span}> free </span>
-        consultation and calculation of the cost of your project
+        {lang.formTextTitle.order}<span className={Styles.span}> {lang.formTextTitle.free} </span>
+        {lang.formTextTitle.consultation}
       </h1>
       <p className={Styles.formParagraph}>
-        Fill out the form or contact our specialist in a convenient way for you.
-        We will select for you a comfortable consultation time and calculate the
-        cost of the project.
+       {lang.fromTextPtext}
       </p>
       <a href="#" className={Styles.aLink}>
         <Facebook sx={{ width: 40, fontSize: 36 }} />
