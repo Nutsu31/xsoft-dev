@@ -19,13 +19,11 @@ const WallpaperSection = ({lang}) => {
         )}
       </div>
       <div className={Styles.shadow}>
-        <h1 className={Styles.headerTxt}>
-          {lang.Main.headerText}
-        </h1>
-        <p className={Styles.infoTxt}>
-          {lang.Main.InfoText}
-        </p>
-        <button className={Styles.btn}>{lang.Main.ContactBtn}</button>
+        <h1 className={Styles.headerTxt}>{lang.Main.headerText}</h1>
+        <p className={Styles.infoTxt}>{lang.Main.InfoText}</p>
+       
+          <button className={Styles.btn}>{lang.Main.ContactBtn}</button>
+       
       </div>
     </div>
   );

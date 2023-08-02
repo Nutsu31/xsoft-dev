@@ -14,57 +14,37 @@ import {
 
 const infoArr = [
   {
-    headerTxt: "Consultation",
-    bodyTxt:
-      "We will discuss the details of your project and select the best solution in accordance with the tasks and budget.",
     Icon: Message,
   },
   {
-    headerTxt: "Preparation of terms of reference",
-    bodyTxt:
-      "We will evaluate and draw up a technical task with the exact terms, budget and functionality of the product.",
     Icon: Article,
   },
   {
-    headerTxt: "Analytics",
-    bodyTxt:
-      "We will conduct a marketing analysis" +
-      " and develop a prototype of the future product.",
     Icon: Analytics,
   },
   {
-    headerTxt: "Design",
-    bodyTxt:
-      "We will develop a convenient and adaptive interface for the product.",
     Icon: DesignServices,
   },
   {
-    headerTxt: "Development",
-    bodyTxt:
-      "We will select a suitable technology stack and implement the technical part of the project.",
     Icon: DeveloperMode,
   },
   {
-    headerTxt: "Testing",
-    bodyTxt:
-      "We will conduct tests to make sure there are no errors and shortcomings.",
     Icon: Settings,
   },
   {
-    headerTxt: "Launch and support",
-    bodyTxt: "We will ensure a successful product launch and maintenance.",
     Icon: RocketLaunch,
   },
 ];
-const ServiceOperations = () => {
+const ServiceOperations = ({lang}) => {
+  console.log(lang)
   return (
     <div style={{ display: "flex", flexWrap: "wrap" }}>
-      {infoArr.map((item) => (
+      {lang.infoArr.map((item,index) => (
         <EachOperation
           key={uuid()}
           headerTxt={item.headerTxt}
           bodyTxt={item.bodyTxt}
-          Icon={item.Icon}
+          Icon={infoArr[index].Icon}
         />
       ))}
     </div>

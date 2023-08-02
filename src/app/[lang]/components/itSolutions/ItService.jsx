@@ -4,10 +4,9 @@ import Styles from "./ItService.module.css";
 import Image from "next/image";
 import Box from "@/app/[lang]/assets/svg/box.svg";
 
-const ItService = ({ text }) => {
+const ItService = ({ text,imgArr }) => {
   const [hover, setHover] = useState(false);
-  const img = hover ? text.hover : text.img;
-  console.log(text)
+  const img = hover ? imgArr.hover.src : imgArr.img.src;
   return (
     <div
       className={Styles.box}

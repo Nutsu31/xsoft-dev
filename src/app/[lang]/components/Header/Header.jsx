@@ -33,7 +33,6 @@ const Header = ({lang,params}) => {
   const enLink= `/en${pathWithoutLanguage}`;
 
 
-console.log(pathname)
   const path = usePathname();
   useEffect(() => {
     smoothScrollToTop();

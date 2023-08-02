@@ -9,6 +9,7 @@ const ServiceHeader = ({lang}) => {
       <p className={Styles.p}>
         {lang.text}
       </p>
+     
       <button className={Styles.btn}>{lang.consultation}</button>
       <Image src={bg} alt="bg" className={Styles.bg} />
     </div>

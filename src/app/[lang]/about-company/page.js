@@ -10,10 +10,10 @@ const About = async ({params}) => {
   const lang = await getDictionary(params?.lang)
   return (
     <Layout params={params?.lang} lang={lang}>
-      <HeadText />
-      <AboutSection />
-      <Chosen />
-      <FormSection />
+      <HeadText lang={lang} />
+      <AboutSection lang={lang.AboutUs} />
+      <Chosen lang={lang} />
+      <FormSection lang={lang.formSection} />
     </Layout>
   );
 };
