@@ -52,12 +52,13 @@
   font-size: 28px;
 }
 .btn {
+  padding: 10px;
+  height: 70px;
+  background: rgb(66, 66, 255);
+  border: none;
   color: white;
   font-size: 20px;
-  padding: 1rem 1.6rem;
-  border: none;
-  background: #3056ff;
-  cursor: pointer;
+  font-weight: 600;
 }
 
 @media (max-width: 1020px) {

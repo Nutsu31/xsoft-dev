@@ -17,8 +17,8 @@ const ServiceSection = ({lang}) => {
       <ServiceOperations lang={lang.OperationPrinciple} />
       <h1 className={Styles.h1}>{lang.Technologystack}</h1>
       <TechnologiesSection />
-      <h1 className={Styles.h1}>{lang.Cases}</h1>
-      <Cases />
+      
+      <Cases lang={lang.Cases}/>
       <FormSection lang={lang.formSection} />
     </div>
   );

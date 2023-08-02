@@ -7,9 +7,10 @@ import Grid from "@mui/material/Unstable_Grid2";
 import Image from "next/image";
 import { Link as LinkScroll } from "react-scroll";
 
-const Cases = () => {
+const Cases = ({lang}) => {
   return (
     <div className="cases-section">
+      <h1 className="cases-title">{lang}</h1>
       <Box sx={{ flexGrow: 1 }}>
         <Grid
           container
