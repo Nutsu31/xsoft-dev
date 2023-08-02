@@ -3,19 +3,17 @@ import Styles from "./HeadText.module.css";
 import Bg from "@/app/[lang]/assets/w3.png";
 import Image from "next/image";
 import Circle from "../contact-us/Circle";
-const HeadText = () => {
+const HeadText = ({lang}) => {
   return (
     <div className={Styles.textWrapper}>
       {/* <Circle /> */}
       <Image src={Bg} alt="wallpaper" className={Styles.bgImage} />
-      <h1 className={Styles.h1}>Experts in mobile and web development</h1>
+      <h1 className={Styles.h1}>{lang.AboutUs.Title}</h1>
       <p className={Styles.p}>
-        Our mission is to anticipate customer requirements and help them grow
-        their business in the online sector.
+       {lang.AboutUs.firstText}
       </p>
       <p className={Styles.p}>
-        We are focused on solving the clients problems and the exact result in
-        numbers.
+       {lang.AboutUs.secondText}
       </p>
     </div>
   );

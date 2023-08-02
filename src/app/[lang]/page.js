@@ -20,7 +20,7 @@ export default async function Home({params}) {
 
   const lang = await getDictionary(params?.lang)
 
-  console.log(params)
+
 
 
   return (

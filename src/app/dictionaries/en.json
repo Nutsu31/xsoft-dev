@@ -192,7 +192,62 @@
         "hover": "/assets/svg/mobile.svg"
       }
     }
-  ]
+  ],
+  "OperationPrinciple": {
+    "title": "Principle of operation",
+     "infoArr" : [
+      {
+        "headerTxt": "Consultation",
+        "bodyTxt": "We will discuss the details of your project and select the best solution in accordance with the tasks and budget."
+      },
+      {
+        "headerTxt": "Preparation of terms of reference",
+        "bodyTxt": "We will evaluate and draw up a technical task with the exact terms, budget and functionality of the product."
+      },
+      {
+        "headerTxt": "Analytics",
+        "bodyTxt":"We will conduct a marketing analysis and develop a prototype of the future product."
+      },
+      {
+        "headerTxt": "Design",
+        "bodyTxt": "We will develop a convenient and adaptive interface for the product."
+      },
+      {
+        "headerTxt": "Development",
+        "bodyTxt": "We will select a suitable technology stack and implement the technical part of the project."
+        
+      },
+      {
+        "headerTxt": "Testing",
+        "bodyTxt": "We will conduct tests to make sure there are no errors and shortcomings."
+
+      },
+      {
+        "headerTxt": "Launch and support",
+        "bodyTxt": "We will ensure a successful product launch and maintenance."
+      }
+    ]
+  },
+  "Technologystack": "Technology stack",
+  "Cases": "Cases",
+  "AboutUs": {
+    "Title": "Experts in mobile and web development",
+    "firstText": "Our mission is to anticipate customer requirements and help them grow their business in the online sector.",
+    "secondText": "We are focused on solving the clients problems and the exact result in numbers.",
+    "infoUs" : [
+      { "number": "3 years", "text": "On the market" },
+      { "number": "60+", "text": "Implemented project" },
+      { "number": "10", "text": "Specialists" },
+      { "number": "2", "text": "Areas of cooperation" }
+    ]
+  },
+  "contactUs": {
+    "Title": "We are always open to the offer",
+    "call": "Call us:",
+    "mail": "Email us:"
+  }
+  
+  
   
   
   

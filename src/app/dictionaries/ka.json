@@ -112,11 +112,11 @@
   "ItSolutions": [
     {
       "text": {
-        "header": "Web development",
-        "info": "Development of sites and web applications of any complexity",
-        "info2": "Consulting",
-        "info3": "UI/UX design",
-        "dev": "Turkey development",
+        "header": "ვებ დეველოპმენტი",
+        "info": "ნებისმიერი სირთულის საიტებისა და ვებ აპლიკაციების შემუშავება",
+        "info2": "კონსულტაცია",
+        "info3": "UI/UX დიზაინი",
+        "dev": "განვითარება",
         "boxNumber": 1,
         "img": "./images/mobile.svg",
         "hover": "./images/mobile.svg"
@@ -124,11 +124,11 @@
     },
     {
       "text": {
-        "header": "Mobile development",
-        "info": "Android / iOS mobile application development",
-        "info2": "Consulting",
-        "info3": "UI/UX design",
-        "dev": "Turkey development",
+        "header": "მობაილ დეველოპმენტი",
+        "info": "Android / iOS მობილური აპლიკაციის შემუშავება",
+        "info2": "კონსულტაცია",
+        "info3": "UI/UX დიზაინი",
+        "dev": "განვითარება",
         "boxNumber": 2,
         "img": "./images/mobile.svg",
         "hover": "./images/mobile.svg"
@@ -136,11 +136,11 @@
     },
     {
       "text": {
-        "header": "Boxed solutions",
-        "info": "Development of sites and web applications of any complexity",
-        "info2": "Consulting",
-        "info3": "UI/UX design",
-        "dev": "Development from 2 weeks",
+        "header": "Boxed სოლუშენი",
+        "info": "ნებისმიერი სირთულის საიტებისა და ვებ აპლიკაციების შემუშავება",
+        "info2": "კონსულტაცია",
+        "info3": "UI/UX დიზაინი",
+        "dev": "დეველოპმენტი 2 კვირიდან",
         "boxNumber": 3,
         "img": "./images/mobile.svg",
         "hover": "./images/mobile.svg"
@@ -148,11 +148,11 @@
     },
     {
       "text": {
-        "header": "Outstaff",
-        "info": "We allocate developers for your tasks.",
-        "info2": "Adaptation",
-        "info3": "Working on your project",
-        "dev": "Flexible prices",
+        "header": "აუთსტაფი",
+        "info": "ჩვენ გამოვყოფთ დეველოპერებს თქვენი ამოცანებისთვის.",
+        "info2": "ადაპტაცია",
+        "info3": "თქვენს პროექტზე მუშაობა",
+        "dev": "მოქნილი ფასები",
         "boxNumber": 4,
         "img": "/assets/svg/mobile.svg",
         "hover": "/assets/svg/mobile.svg"
@@ -160,11 +160,11 @@
     },
     {
       "text": {
-        "header": "No code solution",
-        "info": "Technical support and service 24/7.",
-        "info2": "Consulting",
-        "info3": "UI/UX design",
-        "dev": "Turkey development",
+        "header": "კოდის გადაწყვეტა არ არის",
+        "info": "ტექნიკური მხარდაჭერა და მომსახურება 24/7.",
+        "info2": "კონსულტაცია",
+        "info3": "UI/UX დიზაინი",
+        "dev": "განვითარება",
         "boxNumber": 5,
         "img": "/assets/svg/mobile.svg",
         "hover": "/assets/svg/mobile.svg"
@@ -172,11 +172,11 @@
     },
     {
       "text": {
-        "header": "Support",
-        "info": "Technical support and service 24/7.",
-        "info2": "Reduced product downtime",
-        "info3": "Assistance in restoring the functionality of the product",
-        "dev": "Prompt response to problems",
+        "header": "მხარდაჭერა",
+        "info": "ტექნიკური მხარდაჭერა და მომსახურება 24/7.",
+        "info2": "პროდუქტის შემცირებული დრო",
+        "info3": "დახმარება პროდუქტის ფუნქციონირების აღდგენაში",
+        "dev": "პრობლემების სწრაფი რეაგირება",
         "boxNumber": 6,
         "img": "/assets/svg/mobile.svg",
         "hover": "/assets/svg/mobile.svg"
@@ -184,17 +184,70 @@
     },
     {
       "text": {
-        "header": "Design",
-        "info": "Technical support and service 24/7.",
-        "info2": "Reduced product downtime",
-        "info3": "Assistance in restoring the functionality of the product",
-        "dev": "Prompt response to problems",
+        "header": "დიზაინი",
+        "info": "ტექნიკური მხარდაჭერა და მომსახურება 24/7.",
+        "info2": "პროდუქტის შემცირებული დრო",
+        "info3": "დახმარება პროდუქტის ფუნქციონირების აღდგენაში",
+        "dev": "პრობლემების სწრაფი რეაგირება",
         "boxNumber": 7,
         "img": "/assets/svg/mobile.svg",
         "hover": "/assets/svg/mobile.svg"
       }
     }
-  ]
+  ],
+  "OperationPrinciple": {
+    "title": "ოპერაციის პრინციპები",
+     "infoArr" : [
+      {
+        "headerTxt": "Კონსულტაცია",
+        "bodyTxt": "ჩვენ განვიხილავთ თქვენი პროექტის დეტალებს და შევარჩევთ საუკეთესო გადაწყვეტას ამოცანებისა და ბიუჯეტის შესაბამისად."
+      },
+      {
+        "headerTxt": "სამუშაო პირობების მომზადება",
+        "bodyTxt": "ჩვენ შევაფასებთ და შევასრულებთ ტექნიკურ დავალებას პროდუქტის ზუსტი პირობებით, ბიუჯეტით და ფუნქციონალობით."
+      },
+      {
+        "headerTxt": "ანალიტიკა",
+        "bodyTxt":"ჩავატარებთ მარკეტინგულ ანალიზს და შევიმუშავებთ მომავალი პროდუქტის პროტოტიპს."
+      },
+      {
+        "headerTxt": "დიზაინი",
+        "bodyTxt": "ჩვენ შევიმუშავებთ პროდუქტისთვის მოსახერხებელ და ადაპტირებულ ინტერფეისს."
+      },
+      {
+        "headerTxt": "განვითარება",
+        "bodyTxt": "ჩვენ შევარჩევთ შესაფერის ტექნოლოგიურ დასტას და განვახორციელებთ პროექტის ტექნიკურ ნაწილს."
+        
+      },
+      {
+        "headerTxt": "ტესტირება",
+        "bodyTxt": "ჩვენ ჩავატარებთ ტესტებს, რათა დავრწმუნდეთ, რომ არ არის შეცდომები და ხარვეზები."
+
+      },
+      {
+        "headerTxt": "გაშვება და მხარდაჭერა",
+        "bodyTxt": "ჩვენ უზრუნველვყოფთ პროდუქტის წარმატებულ გაშვებას და შენარჩუნებას."
+      }
+    ]
+  },
+  "Technologystack": "გამოყენებული ტექნოლოგიები",
+  "Cases": "ქეისები",
+  "AboutUs": {
+    "Title": "ექსპერტები მობილური და ვებ განვითარების სფეროში",
+    "firstText": "ჩვენი მისიაა მომხმარებელთა მოთხოვნების გათვალისწინება და მათი ბიზნესის განვითარება ონლაინ სექტორში.",
+    "secondText": "ჩვენ ორიენტირებული ვართ კლიენტების პრობლემების გადაჭრაზე და ზუსტ შედეგზე რიცხვებში.",
+    "infoUs" : [
+      { "number": "3 წელი", "text": "ბაზარზე" },
+      { "number": "60+", "text": "განხორციელებული პროექტი" },
+      { "number": "10", "text": "სპეციალისტები" },
+      { "number": "2", "text": "თანამშრომლობის სფეროები"}
+    ]
+  },
+  "contactUs": {
+    "Title": "ჩვენ ყოველთვის ღია ვართ შემოთავაზებისთვის",
+    "call": "დაგვირეკეთ:",
+    "mail": "მოგვწერეთ:"
+  }
   
 
 

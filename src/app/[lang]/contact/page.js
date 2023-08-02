@@ -9,8 +9,8 @@ const Contact = async ({params}) => {
 
   return (
     <Layout lang={lang} params={params?.lang}>
-      <FirstSection /> 
-      <FormSection />
+      <FirstSection lang={lang.contactUs} /> 
+      <FormSection lang={lang.formSection} />
     </Layout>
   );
 };
