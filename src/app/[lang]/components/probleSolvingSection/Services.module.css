@@ -1,0 +1,36 @@
+.box {
+  width: 326px;
+  height: 204px;
+  border-radius: 16px;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  padding: 36px;
+  gap: 16px;
+  text-decoration: none;
+  background: #242424;
+  position: relative;
+  overflow: hidden;
+  z-index: 2;
+}
+
+
+.box:hover {
+  background: linear-gradient(140deg, #242424 35%, #033064);
+}
+
+.header {
+  color: white;
+  font-size: 24px;
+}
+.info {
+  color: gray;
+}
+.more {
+  color: #0b10ff;
+  font-size: 20px;
+  font-weight: 700;
+  cursor: pointer;
+}
+

@@ -1,0 +1,201 @@
+{
+    "Header":{
+        "Home": "მთავარი",
+        "About": "ჩვენს შესახებ",
+        "Contact": "კონტაქტები",
+        "Services": "სერვისები"
+    },
+    "Main": {
+        "headerText": "მობილური და ვებ აპლიკაციების შემუშავება ანაზრაურების საფუძველზე",
+        "InfoText": "ვებსაიტების, მობილური აპლიკაციების, ონლაინ მაღაზიებისა და შიდა პორტალების შემუშავება ანაზრაურების საფუძველზე. ჩვენ ვიპოვით გამოსავალს, რომელიც შეესაბამება თქვენს ბიუჯეტს და ვადას.",
+        "ContactBtn": "დაგვიკავშირდით"
+    },
+    "SelectionHandlerone": {
+        "Text": "ჩვენ ორიენტირებული ვართ თქვენი პრობლემების გადაჭრაზე"
+    },
+    "SelectionHandlertwo": {
+        "Text": "IT გადაწყვეტილებები ბიზნესისთვის"
+    },
+
+    "problemSolving": [
+        {
+            "text": {
+              "header": "ბიზნეს პროცესის ოპტიმიზაცია",
+              "info": "გაზარდეთ პროდუქტიულობა და ბიზნესის ეფექტურობა",
+              "moreinfo": "მეტი",
+              "boxNumber": 1
+            }
+        }, {
+            "text": {
+              "header": "გაყიდვების გაზრდა",
+              "info": "მოსახერხებელი სავაჭრო გარემო მაღალი გაყიდვების გასაღებია.",
+              "moreinfo": "მეტი",
+              "boxNumber": 2
+            }
+        }, {
+            "text": {
+              "header": "კონკურენტებისგან განშორება",
+              "info": "იყავი პირველი ინდუსტრიაში! გამოირჩეოდი კონკურენტებისგან IT ტექნოლოგიების დახმარებით.",
+              "moreinfo": "მეტი",
+              "boxNumber": 3
+            }
+        },{
+            "text": {
+              "header": "დაწყება",
+              "info": "გამოსავალი თქვენი ახალი პროდუქტის სწრაფი დაწყებისთვის.",
+              "moreinfo": "მეტი",
+              "boxNumber": 4
+            }
+        }, {
+            "text": {
+              "header": "ლოიალობის გაზრდა",
+              "info": "კომპანიის ბრუნვის გაზრდა მომხმარებელთან გრძელვადიანი ურთიერთობის გზით.",
+              "moreinfo": "მეტი",
+              "boxNumber": 5
+            }
+        }, {
+            "text": {
+              "header": "რეპუტაცია",
+              "info": "გაზარდეთ თქვენი რეპუტაცია და ბრენდის ცნობადობა.",
+              "moreinfo": "მეტი",
+              "boxNumber": 6
+            }
+        }
+    ],
+    "chosenTitle": "ჩვენ ვირჩევთ რადგან:",
+    "OurChosen": [
+      {
+        "id": 1,
+        "title": "ჩვენ ვპოულობთ გადაწყვეტილებებს ნებისმიერი ბიუჯეტისთვის",
+        "text": "ჩვენ ვქმნით მასშტაბურ IT პროდუქტებს სხვადასხვა სფეროსთვის, გრაფიკის შესაბამისად და ბიუჯეტის ფარგლებში. ჩვენ ყოველთვის ვიღებთ პასუხისმგებლობას შედეგზე.",
+        "img": "https://itrum.ru/assets/components/reasons/wallet.svg"
+    },{
+        "id": 2,
+        "title": "სამუშაოს დროულად შესრულება",
+        "text": "ჩვენ ადაპტირდებით თითოეულ კლიენტთან, ბიზნეს ამოცანების სპეციფიკისა და მოთხოვნების გათვალისწინებით. ჩვენ ვმუშაობთ თქვენთვის მოსახერხებელ რეჟიმში და დროის ზონაში.",
+        "img": "https://itrum.ru/assets/components/reasons/time.svg"
+    },{
+        "id": 3,
+        "title": "ჩვენ ვქმნით ტექნოლოგიებს, რომლებიც გადაჭრის ბიზნეს პრობლემებს",
+        "text": "ჩვენი მთავარი მიზანია მოვაგვაროთ კლიენტის ბიზნეს პრობლემები. ჩვენ ვქმნით არა მხოლოდ სერვისებს, არამედ ინსტრუმენტებს, რომლებიც აგვარებენ ბიზნეს პრობლემებს.",
+        "img": "https://itrum.ru/assets/components/reasons/bag.svg"
+    },{
+        "id": 4,
+        "title": "მოქნილობა პროექტის მენეჯმენტში",
+        "text": "ჩვენს მუშაობაში ვიყენებთ SCRUM და Agile მეთოდებს დროისა და ხარჯების შესამცირებლად. განვითარების მთელ პროცესს სრულად აკონტროლებენ პროექტის მენეჯმენტის სპეციალისტები - პროექტის მენეჯერები.",
+        "img": "https://itrum.ru/assets/components/reasons/heartbeat.svg"
+    }
+  ],
+  "formSection": {
+    "formTexts": {
+      "formTextTitle": {
+        "order": "შეუკვეთეთ",
+        "free": "უფასო",
+        "consultation": "კონსულტაცია და თქვენი პროექტის ღირებულების გამოთვლა"
+      },
+      "fromTextPtext": "შეავსეთ ფორმა ან დაუკავშირდით ჩვენს სპეციალისტს თქვენთვის მოსახერხებელი გზით. ჩვენ შეგირჩევთ თქვენთვის კომფორტულ კონსულტაციის დროს და გამოვთვლით პროექტის ღირებულებას."
+    },
+    "form": {
+      "Interested": "დაინტერესებული ვარ:",
+      "sendBtn": "გაგზავნა"
+    }
+  },
+  "ServicePage": {
+    "ServiceHeader": {
+      "title": "IT გადაწყვეტილებები ბიზნესისთვის",
+      "text": "ჩვენ ვავითარებთ ვებგვერდებს, ონლაინ მაღაზიებს, მობილურ აპლიკაციებს, CRM და ციფრულ პლატფორმებს. ჩვენ შეგირჩევთ ინდივიდუალურ გადაწყვეტას თქვენი საჭიროებების, ბიუჯეტისა და დროის ჩარჩოებისთვის.",
+      "consultation": "კონსულტაციის გავლა"
+    }
+  },
+
+
+  "ItSolutions": [
+    {
+      "text": {
+        "header": "Web development",
+        "info": "Development of sites and web applications of any complexity",
+        "info2": "Consulting",
+        "info3": "UI/UX design",
+        "dev": "Turkey development",
+        "boxNumber": 1,
+        "img": "./images/mobile.svg",
+        "hover": "./images/mobile.svg"
+      }
+    },
+    {
+      "text": {
+        "header": "Mobile development",
+        "info": "Android / iOS mobile application development",
+        "info2": "Consulting",
+        "info3": "UI/UX design",
+        "dev": "Turkey development",
+        "boxNumber": 2,
+        "img": "./images/mobile.svg",
+        "hover": "./images/mobile.svg"
+      }
+    },
+    {
+      "text": {
+        "header": "Boxed solutions",
+        "info": "Development of sites and web applications of any complexity",
+        "info2": "Consulting",
+        "info3": "UI/UX design",
+        "dev": "Development from 2 weeks",
+        "boxNumber": 3,
+        "img": "./images/mobile.svg",
+        "hover": "./images/mobile.svg"
+      }
+    },
+    {
+      "text": {
+        "header": "Outstaff",
+        "info": "We allocate developers for your tasks.",
+        "info2": "Adaptation",
+        "info3": "Working on your project",
+        "dev": "Flexible prices",
+        "boxNumber": 4,
+        "img": "/assets/svg/mobile.svg",
+        "hover": "/assets/svg/mobile.svg"
+      }
+    },
+    {
+      "text": {
+        "header": "No code solution",
+        "info": "Technical support and service 24/7.",
+        "info2": "Consulting",
+        "info3": "UI/UX design",
+        "dev": "Turkey development",
+        "boxNumber": 5,
+        "img": "/assets/svg/mobile.svg",
+        "hover": "/assets/svg/mobile.svg"
+      }
+    },
+    {
+      "text": {
+        "header": "Support",
+        "info": "Technical support and service 24/7.",
+        "info2": "Reduced product downtime",
+        "info3": "Assistance in restoring the functionality of the product",
+        "dev": "Prompt response to problems",
+        "boxNumber": 6,
+        "img": "/assets/svg/mobile.svg",
+        "hover": "/assets/svg/mobile.svg"
+      }
+    },
+    {
+      "text": {
+        "header": "Design",
+        "info": "Technical support and service 24/7.",
+        "info2": "Reduced product downtime",
+        "info3": "Assistance in restoring the functionality of the product",
+        "dev": "Prompt response to problems",
+        "boxNumber": 7,
+        "img": "/assets/svg/mobile.svg",
+        "hover": "/assets/svg/mobile.svg"
+      }
+    }
+  ]
+  
+
+
+}

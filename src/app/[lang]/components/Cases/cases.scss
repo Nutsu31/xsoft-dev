@@ -1,0 +1,160 @@
+.cases-section {
+  width: 1060px;
+  max-width: 90%;
+  margin: 5rem auto 3rem auto;
+  padding: 0.5rem 0.6rem;
+  color: #fff;
+
+  .cases-box {
+    background: #014694;
+    position: relative;
+    height: 360px;
+    border-radius: 0.4rem;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    align-items: flex-start;
+    justify-content: flex-end;
+    transition: all 0.6s ease-in-out;
+    padding: 0.5rem;
+    .cases-info {
+      visibility: hidden;
+      transition: all 0.3s ease-out;
+      z-index: 12;
+      max-width: 100%;
+    }
+    img {
+      position: absolute;
+      z-index: 1;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -40%);
+      backface-visibility: hidden;
+      object-fit: contain;
+      transition: all 0.5s ease-out;
+    }
+    
+    &:hover {
+      background: linear-gradient(to top, #000, #033064);
+    }
+
+    &:hover img {
+      backface-visibility: hidden;
+      transform: scale(0.5, 0.5);
+      transform: translate(-50%, -55%);
+      opacity: 1;
+    }
+    &:hover .cases-info {
+      visibility: visible;
+    }
+  }
+  .add-project{
+    background: #242424;
+    width: 100%;
+    height: 300px;
+    border-radius: 0.4rem;
+    padding: 0.5rem 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    .add-project-box{
+      background: #161616;
+      width: 100px;
+      height: 100px;
+      border-radius: 0.4rem;
+      position: relative;
+      transition: all .3s;
+      padding: 0.5rem;
+      .add-line:nth-child(1){
+        position: absolute;
+        background: #242424;
+        width: 80%;
+        height: 10px;
+        z-index: 2;
+        top: 45%;
+        left: 10px;
+        border-radius: 0.4rem;
+      }
+      .add-line:nth-child(2){
+        position: absolute;
+        background: #242424;
+        width: 10px;
+        height: 80%;
+        z-index: 2;
+        left: 45%;
+        top: 10px;
+        border-radius: 0.4rem;
+      }
+
+
+    }
+    &:hover .add-project-box{
+      transform: scale(1.5);
+    }
+
+    &:hover .add-project-box .add-line:nth-child(1),
+    &:hover .add-project-box .add-line:nth-child(2){
+     background-color: #fff;
+    }
+  }
+}
+
+@media (max-width: 652px){
+  .css-phooid-MuiGrid2-root{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    --Grid-columns: none;
+    .cases-box{
+      width: 500px;
+      
+    }
+    .add-project{
+      width: 500px;
+    }
+  }
+}
+
+@media (max-width: 600px){ 
+  .css-phooid-MuiGrid2-root{
+    .cases-box{
+      width: 400px;
+      max-width: 100%;
+    }
+    .add-project{
+      width: 400px;
+      max-width: 100%;
+    }
+
+  } 
+    
+  
+}
+
+@media (max-width: 471px){ 
+  .cases-section{
+
+    .cases-box{
+      width: 300px;
+      max-width: 100%;
+      height: 200px;
+
+      img{
+        width: 100%;
+        object-fit: contain;
+      }
+
+    }
+
+    .add-project{
+      width: 300px;
+      max-width: 100%;
+    }
+
+
+  } 
+}
+

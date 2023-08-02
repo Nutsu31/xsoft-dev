@@ -1,0 +1,201 @@
+{
+    "Header":{
+        "Home": "Home",
+        "About": "About",
+        "Contact": "Contact",
+        "Services": "Services"
+    },
+    "Main": {
+        "headerText": "Development of mobile and web applications on a turnkey basis",
+        "InfoText": "Development of websites, mobile applications, online stores and internal portals on a turnkey basis. We ll find a solution that fits your budget and time frame.",
+        "ContactBtn": "Contact us"
+    },
+    "SelectionHandlerone": {
+        "Text": "We are focused on solving your problems"
+    },
+    "SelectionHandlertwo": {
+        "Text": "IT solutions for business"
+    },
+    "problemSolving": [
+        {
+            "text": {
+              "header": "Business process optimization",
+              "info": "Increase productivity and business efficiency",
+              "moreinfo": "More",
+              "boxNumber": 1
+            }
+        }, {
+            "text": {
+              "header": "Increasing sales",
+              "info": "A convenient shopping environment is the key to high sales.",
+              "moreinfo": "More",
+              "boxNumber": 2
+            }
+        }, {
+            "text": {
+              "header": "Detachment from competitors",
+              "info": "Be the first in the industry! Stand out from competitors with the help of IT-technologies.",
+              "moreinfo": "More",
+              "boxNumber": 3
+            }
+        },{
+            "text": {
+              "header": "Start up",
+              "info": "The solution for a quick start of your new product.",
+              "moreinfo": "More",
+              "boxNumber": 4
+            }
+        }, {
+            "text": {
+              "header": "Loyalty increase",
+              "info": "Increasing the company's turnover through long-term customer relationships.",
+              "moreinfo": "More",
+              "boxNumber": 5
+            }
+        }, {
+            "text": {
+              "header": "Reputation",
+              "info": "Boost your reputation and brand awareness.",
+              "moreinfo": "More",
+              "boxNumber": 6
+            }
+        }
+    ],
+    "chosenTitle": "We are chosen because:",
+    "OurChosen": [
+      {
+        "id": 1,
+        "title": "We find solutions for any budget",
+        "text": "We create scalable IT products for various areas, in accordance with the schedule and within the budget. We always take responsibility for the result.",
+        "img": "https://itrum.ru/assets/components/reasons/wallet.svg"
+    },{
+        "id": 2,
+        "title": "Getting the job done right on time",
+        "text": "We adapt to each client, taking into account the specifics and requirements of business tasks. We work in a convenient mode and time zone for you.",
+        "img": "https://itrum.ru/assets/components/reasons/time.svg"
+    },{
+        "id": 3,
+        "title": "We create technologies that solve business problems",
+        "text": "Our main goal is to solve the client's business problems. We create not just services, but tools that solve business problems.",
+        "img": "https://itrum.ru/assets/components/reasons/bag.svg"
+    },{
+        "id": 4,
+        "title": "Flexibility in project management",
+        "text": "In our work, we use SCRUM and Agile methods to reduce time and costs. The entire development process is fully controlled by project management specialists - Project managers.",
+        "img": "https://itrum.ru/assets/components/reasons/heartbeat.svg"
+    }
+  ],
+  "formSection": {
+    "formTexts": {
+      "formTextTitle": {
+        "order": "Order",
+        "free": "free",
+        "consultation": "consultation and calculation of the cost of your project"
+      },
+      "fromTextPtext": "Fill out the form or contact our specialist in a convenient way for you. We will select for you a comfortable consultation time and calculate the cost of the project."
+    },
+    "form": {
+      "Interested": "Im interested in:",
+      "sendBtn": "SEND"
+    }
+  },
+  "ServicePage": {
+    "ServiceHeader": {
+      "title": "IT solutions for business",
+      "text": "We develop websites, online stores, mobile applications, CRM and digital platforms. We will select an individual solution for your needs, budget and time frame.",
+      "consultation": "To get a consultation"
+    }
+  },
+
+  "ItSolutions": [
+    {
+      "text": {
+        "header": "Web development",
+        "info": "Development of sites and web applications of any complexity",
+        "info2": "Consulting",
+        "info3": "UI/UX design",
+        "dev": "Turkey development",
+        "boxNumber": 1,
+        "img": "./images/support.svg",
+        "hover": "./images/support.svg"
+      }
+    },
+    {
+      "text": {
+        "header": "Mobile development",
+        "info": "Android / iOS mobile application development",
+        "info2": "Consulting",
+        "info3": "UI/UX design",
+        "dev": "Turkey development",
+        "boxNumber": 2,
+        "img": "./images/mobile.svg",
+        "hover": "./images/mobile.svg"
+      }
+    },
+    {
+      "text": {
+        "header": "Boxed solutions",
+        "info": "Development of sites and web applications of any complexity",
+        "info2": "Consulting",
+        "info3": "UI/UX design",
+        "dev": "Development from 2 weeks",
+        "boxNumber": 3,
+        "img": "./images/mobile.svg",
+        "hover": "./images/mobile.svg"
+      }
+    },
+    {
+      "text": {
+        "header": "Outstaff",
+        "info": "We allocate developers for your tasks.",
+        "info2": "Adaptation",
+        "info3": "Working on your project",
+        "dev": "Flexible prices",
+        "boxNumber": 4,
+        "img": "./images/mobile.svg",
+        "hover": "./images/mobile.svg"
+      }
+    },
+    {
+      "text": {
+        "header": "No code solution",
+        "info": "Technical support and service 24/7.",
+        "info2": "Consulting",
+        "info3": "UI/UX design",
+        "dev": "Turkey development",
+        "boxNumber": 5,
+        "img": "./images/mobile.svg",
+        "hover": "./images/mobile.svg"
+      }
+    },
+    {
+      "text": {
+        "header": "Support",
+        "info": "Technical support and service 24/7.",
+        "info2": "Reduced product downtime",
+        "info3": "Assistance in restoring the functionality of the product",
+        "dev": "Prompt response to problems",
+        "boxNumber": 6,
+        "img": "/assets/svg/mobile.svg",
+        "hover": "/assets/svg/mobile.svg"
+      }
+    },
+    {
+      "text": {
+        "header": "Design",
+        "info": "Technical support and service 24/7.",
+        "info2": "Reduced product downtime",
+        "info3": "Assistance in restoring the functionality of the product",
+        "dev": "Prompt response to problems",
+        "boxNumber": 7,
+        "img": "/assets/svg/mobile.svg",
+        "hover": "/assets/svg/mobile.svg"
+      }
+    }
+  ]
+  
+  
+  
+     
+}
+
