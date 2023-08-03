@@ -37,7 +37,7 @@ export default async function Home({params}) {
           <ItServiceSection lang={lang} />
         </div>
       </div>
-      <Cases />
+      <Cases lang={lang.Cases} />
       <Chosen lang={lang} />
       <FormSection lang={lang.formSection}/>
     </Layout>

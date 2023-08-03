@@ -36,7 +36,6 @@ const infoArr = [
   },
 ];
 const ServiceOperations = ({lang}) => {
-  console.log(lang)
   return (
     <div style={{ display: "flex", flexWrap: "wrap" }}>
       {lang.infoArr.map((item,index) => (
