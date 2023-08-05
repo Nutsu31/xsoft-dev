@@ -5,7 +5,8 @@ import Vid from "@/app/[lang]/assets/vid2.mp4";
 import Image from "next/image";
 import bg from "@/app/[lang]/assets/w1.png";
 import { useMediaQuery } from "@mui/material";
-const WallpaperSection = ({lang}) => {
+import { Link as LinkScroll } from "react-scroll";
+const WallpaperSection = ({ lang }) => {
   const max800px = useMediaQuery("(max-width:800px)");
   return (
     <div className={Styles.imgWrapper}>
@@ -21,9 +22,18 @@ const WallpaperSection = ({lang}) => {
       <div className={Styles.shadow}>
         <h1 className={Styles.headerTxt}>{lang.Main.headerText}</h1>
         <p className={Styles.infoTxt}>{lang.Main.InfoText}</p>
-       
+
+        <LinkScroll
+          activeClass="active"
+          to="contactUs"
+          spy={true}
+          smooth={true}
+          offset={-150}
+          duration={500}
+        >
+          {" "}
           <button className={Styles.btn}>{lang.Main.ContactBtn}</button>
-       
+        </LinkScroll>
       </div>
     </div>
   );

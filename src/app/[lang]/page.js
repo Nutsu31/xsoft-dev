@@ -12,17 +12,9 @@ import Chosen from "./components/Chosen/Chosen";
 import { getDictionary } from "../../../getDictionary";
 
 
-
-const header1 = "We are focused on solving your problems";
-const header2 = "IT solutions for business";
-
 export default async function Home({params}) {
 
-  const lang = await getDictionary(params?.lang)
-
-
-
-
+  const lang = await getDictionary(params?.lang);
   return (
     <Layout lang={lang} params={params?.lang}>
       <div className="body">
